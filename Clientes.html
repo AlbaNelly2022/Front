@@ -1,0 +1,44 @@
+<!DOCTYPE HTMl>
+
+<HTML>
+
+<head>
+    <script type="text/javascript" src="js/FuncionesClientes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>
+        Clientes
+    </h1>
+    <ul>
+        <li><a href="index.html"> Inicio</a></li>
+        <li><a href="Categoria.html"> Categoria</a></li>
+        <li><a href="Maquinas.html"> Maquinas</a></li>
+        <li><a href="Mensajes.html">Mensajes</a></li>
+        <li><a href="Reservaciones.html">Reservaciones</a></li>
+        <li><a href="Reportes.html">Reportes</a></li>        
+    </ul>
+
+
+    <script type="text/javascript">
+        window.onload = getCliente();
+    </script>
+
+    <div id="resultado1"></div>
+
+    <div>
+        <input placeholder="nombre" id="name" type="text">
+        <input placeholder="edad" id="age" type="number">
+        <input placeholder="email" id="email" type="text">
+        <input placeholder="contreaseña" id="password" type="password">
+    </div>
+
+
+    <button onclick="postCliente()">
+        Crear cliente
+    </button>
+
+</body>
+
+</HTMl>

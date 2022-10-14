@@ -1,0 +1,61 @@
+<!DOCTYPE HTMl>
+
+<HTML>
+
+<head>
+    <script type="text/javascript" src="js/FuncionesReservaciones.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>
+        Reservaciones
+    </h1>
+    <ul>
+
+        <hi><a href="index.html"></a>Inicio</li>
+        <li><a href="Categoria.html"> Categoria</a></li>
+        <li><a href="Maquinas.html"> Maquinas</a></li>
+        <li><a href="Clientes.html"> Clientes</a></li>
+        <li><a href="Mensajes.html">Mensajes</a></li>
+        <li><a href="Reportes.html">Reportes</a></li>
+    </ul>
+
+
+    <script type="text/javascript">
+        window.onload = getMachineToReservation();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = getClientToReservation();
+    </script>
+
+    <br>
+    <label>Fecha de inicio de la Reservación</label>
+    <input id="startDate" type="date" placeholder="startDate"><br>
+
+
+    <label>Fecha de devolucion de la maquina</label>
+    <input id="devolutionDate" type="date" placeholder="devolutionDate"><br>
+
+    <select id="select-maquina"></select><br>
+    <select id="select-cliente"></select><br>
+    
+    <select name="status" id="status">
+        <option value="cancelled"> cancelada </option>
+        <option value="completed"> completada </option>
+    </select><br>
+<br>
+
+    <script type="text/javascript">
+        window.onload = getReservaciones();
+    </script>
+    <div id="resultado1"></div>
+
+    <button onclick="postReservaciones()">
+        Crear Reservaciones
+    </button><br>
+
+</body>
+
+</HTMl>

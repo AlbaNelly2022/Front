@@ -1,0 +1,42 @@
+<!DOCTYPE HTMl>
+
+<HTML>
+
+<head>
+    <script type="text/javascript" src="js/FuncionesReportes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <b>Reportes</b>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Categoria.html"> Categoria</a></li>
+        <li><a href="Maquinas.html"> Maquinas</a></li>
+        <li><a href="Clientes.html"> Clientes</a></li>
+        <li><a href="Mensajes.html">Mensajes</a></li>
+        <li><a href="Reservaciones.html">Reservaciones</a></li>
+    </ul>
+
+    <button onclick="traerReporteStatus()">
+        Crear reporte de status de reservación
+    </button> <br>
+    <div id="resultado1"> </div>
+    <button onclick="traerReportesFechas()">
+        Crear reporte de fechas de reservación
+    </button>
+    
+
+    <br>
+    <button onclick="traerReportesClientes()">
+        Crear reporte de clientes de reservación
+    </button><br>
+    <div id="resultado2"> </div>
+
+
+
+
+</body>
+
+</HTMl>

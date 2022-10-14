@@ -1,0 +1,41 @@
+<!DOCTYPE HTMl>
+
+<HTML>
+
+<head>
+    <script type="text/javascript" src="js/FuncionesCategoria.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>
+        Categoria
+    </h1>
+
+    <ul>
+        <li><a href="index.html"> Inicio</a></li>
+        <li><a href="Maquinas.html"> Maquinas</a></li>
+        <li><a href="Clientes.html"> Clientes</a></li>
+        <li><a href="Mensajes.html">Mensajes</a></li>
+        <li><a href="Reservaciones.html">Reservaciones</a></li>
+        <li><a href="Reportes.html">Reportes</a></li>
+    </ul>
+
+    <script type="text/javascript">
+        window.onload = getCategoria();
+    </script>
+    
+    <div id="resultado1"></div>
+
+        <input type="text" id="name" placeholder="nombre">
+        <input type="text" id="description" placeholder="descripción">
+
+
+    <button onclick="postCategoria()">
+        Crear Categoria
+    </button>
+
+</body>
+
+</HTMl>
